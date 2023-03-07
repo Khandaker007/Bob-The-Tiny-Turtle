@@ -1,0 +1,10 @@
+@import '../../sass/base';
+
+.home{
+    height: 100svh;
+    background-color: $color-PalePink;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

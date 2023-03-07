@@ -1,0 +1,10 @@
+@import '../../sass/base';
+
+.footer{
+    height: 50rem;
+    background-color: $color-LightBlue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

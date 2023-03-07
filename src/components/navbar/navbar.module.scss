@@ -1,0 +1,10 @@
+@import '../../sass/base';
+
+.navbar{
+    height: 20rem;
+    background-color: $color-secondary;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
