@@ -1,10 +1,146 @@
 @import '../../sass/base';
 
 .footer{
-    height: 50rem;
+    position: relative;
     background-color: $color-LightBlue;
+    overflow: hidden;
+    padding-top: 20rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .layout{
+        height: 45rem;
+        width: 70rem;
+
+        position: absolute;
+        left: -30rem;
+        bottom: -12rem;
+
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .numberContainer{
+        .box{
+            position: relative;
+
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+            .numberBox{
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                .iconBox{
+                    height: 6rem;
+                    aspect-ratio: 1;
+
+                    .icon{
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .number{
+                    font-family: sans-serif;
+                    font-size: 5.5rem;
+                    color: $color-white;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .contentContainer{
+        padding: 10rem 20rem 3rem 20rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        .containerLeft{
+            display: flex;
+            flex-direction: column;
+
+            .logoContainer{
+                height: 17rem;
+
+                .logo{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .copywrite{
+                font-family: sans-serif;
+                font-size: 1.8rem;
+                color: $color-primary;
+                margin-top: auto;
+            }
+        }
+        .containerRight{
+            
+            .iconsContainer{
+                display: flex;
+                justify-content: flex-end;
+                gap: 3rem;
+
+                .iconContainer{
+                    position: relative;
+                    height: 8rem;
+
+                    .bgIcon{
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                    .icon{
+                        font-size: 5rem;
+                        color: $color-white;
+
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .contactContainer{
+                
+                .address,
+                .craftedBy,
+                .email{
+                    font-family: sans-serif;
+                    text-align: end;
+                    font-size: 2.4rem;
+                }
+                .heading{
+                    text-align: end;
+                    font-size: 5.2rem;
+                    margin-top: 3rem;
+                }
+                .address{
+                    margin-top: 3rem;
+                    span{
+                        display: block;
+                    }
+                }
+                .email{
+                    margin-top: 2rem;
+                }
+                .craftedBy{
+                    display: block;
+                    font-size: 1.8rem;
+                    color: $color-primary;
+                    margin-left: auto;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
 }
