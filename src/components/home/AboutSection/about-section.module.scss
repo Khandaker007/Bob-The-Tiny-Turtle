@@ -1,0 +1,108 @@
+@import '../../../sass/base';
+
+.aboutSection{
+    position: relative;
+    padding: 40rem 10rem 30rem 10rem;
+    margin-top: -35rem;
+    
+    @media screen and (max-width: 800px){
+        margin-top: -45rem;
+    }
+    @include response(phone){
+        padding: 40rem 5rem 30rem 5rem;
+    }
+
+    .content{
+        text-align: center;
+
+        position: relative;
+        z-index: 1;
+
+        .heading{
+            line-height: 1;
+            margin-bottom: 4rem;
+
+            display: flex;
+            flex-direction: column;
+
+            .headingSmall{
+                font-size: 9rem;
+                color: $textDark;
+
+                @include response(phone){
+                    font-size: 7rem;
+                }
+            }
+            .headingLarge{
+                font-size: 11rem;
+                color: $color-primary;
+
+                @include response(phone){
+                    font-size: 9rem;
+                }
+            }
+        }
+        .desc{
+            font-size: 3rem;
+            color: $textDark;
+            font-family: sans-serif;
+            max-width: 130rem;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            @include response(phone){
+                font-size: 2rem;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .bgContainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        .bgImg{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .mask{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            background-color: rgba($color: $color-secondary, $alpha: .9);
+        }
+    }
+
+    .layoutContainer{
+        height: 60rem;
+        aspect-ratio: 1;
+
+        position: absolute;
+        left: -18rem;
+        bottom: -28rem;
+        z-index: 2;
+
+        @include response(phone){
+            height: 45rem;
+            bottom: -15rem;
+        }
+
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

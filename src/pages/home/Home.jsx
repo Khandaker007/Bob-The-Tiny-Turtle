@@ -1,5 +1,14 @@
 import React from 'react';
 
+// COMPONENTS
+import {
+  HeroSection,
+  AboutSection,
+  BestSellerSection,
+  ProductsListSection,
+  TestimonialSection
+} from '../../components';
+
 import style from './home.module.scss';
 
 const Home = () => {
@@ -7,7 +16,11 @@ const Home = () => {
 
   return (
     <div className={home}>
-      <h1>Home</h1>
+      <HeroSection/>
+      <AboutSection/>
+      <BestSellerSection/>
+      <ProductsListSection/>
+      <TestimonialSection/>
     </div>
   );
 };

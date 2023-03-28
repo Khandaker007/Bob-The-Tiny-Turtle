@@ -1,0 +1,131 @@
+@import '../../../sass/base';
+
+.productsListSection{
+    background-color: $color-LightBlue;
+    padding: 20rem 10rem;
+    margin-top: -20rem;
+
+    @include response(phone){
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .heading{
+        font-size: 8rem;
+        color: $color-DarkOlive;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+    .navContainer{
+        .list{
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+
+            .item{
+                position: relative;
+                cursor: pointer;
+                
+                &:hover .bgImg{
+                    transform: scale(1.05);
+                }
+
+                &:nth-child(1){
+                    height: 12.1rem;
+                    width: 21.4rem;
+
+                    margin-top: -1.6rem;
+                    margin-right: -2.4rem;
+                    z-index: 4;
+                }
+                &:nth-child(2){
+                    height: 10.5rem;
+                    width: 21.1rem;
+
+                    margin-right: -2.5rem;
+                    z-index: 3;
+
+                    @media screen and (max-width: 460px){
+                        margin-top: -2px;
+                    }
+
+                    .text{
+                        position: absolute;
+                        top: 40%;
+                        left: 40%;
+                        transform: translate(-40%, -40%);
+                    }
+                }
+                &:nth-child(3){
+                    height: 10.5rem;
+                    width: 21.1rem;
+
+                    margin-top: -1.6rem;
+                    margin-right: -2.4rem;
+                    z-index: 2;
+
+                    @media screen and (max-width: 460px){
+                        margin-top: -1.3rem;
+                    }
+
+                    .text{
+                        margin-top: 1rem;
+                    }
+                }
+                &:nth-child(4){
+                    height: 12rem;
+                    width: 21.4rem;
+
+                    margin-top: -1.6rem;
+                    z-index: 1;
+                }
+
+                .bgImg{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    transition: all .2s;
+                }
+
+                .text{
+                    font-family: sans-serif;
+
+                    position: absolute;
+                    top: 45%;
+                    left: 45%;
+                    transform: translate(-45%, -45%);
+
+                    span{
+                        display: block;
+                        text-align: center;
+
+                        &:nth-child(1){
+                            font-size: 2.2rem;
+                            font-weight: 600;
+
+                            @media screen and (max-width: 460px){
+                                font-size: 2rem;
+                            }
+                        }
+                        &:nth-child(2){
+                            font-size: 1.7rem;
+
+                            @media screen and (max-width: 460px){
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .productListContainer{
+        margin-top: 10rem;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-template-rows: repeat(2, min-content);
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,218 @@
+[
+    {
+        "id": 1,
+        "age": "infants",
+        "products": [
+            {
+                "id": 1,
+                "title": "Kids Toys",
+                "price": "12",
+                "image": "1"
+            },
+            {
+                "id": 2,
+                "title": "Kids Toys",
+                "price": "15",
+                "image": "1"
+            },
+            {
+                "id": 3,
+                "title": "Kids Toys",
+                "price": "20",
+                "image": "1"
+            },
+            {
+                "id": 4,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 5,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 6,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 7,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 8,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "age": "toddlers",
+        "products": [
+            {
+                "id": 1,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 2,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 3,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 4,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 5,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 6,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 7,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 8,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "age": "preschoolers",
+        "products": [
+            {
+                "id": 1,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 2,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 3,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 4,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 5,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 6,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 7,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 8,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "age": "earlyElementary",
+        "products": [
+            {
+                "id": 1,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 2,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 3,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 4,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 5,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 6,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 7,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            },
+            {
+                "id": 8,
+                "title": "Kids Toys",
+                "price": "10",
+                "image": "1"
+            }
+        ]
+    }
+]

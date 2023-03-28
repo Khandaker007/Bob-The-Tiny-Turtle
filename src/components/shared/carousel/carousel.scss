@@ -1,0 +1,28 @@
+@import '../../../sass/base';
+
+.carousel{
+
+    .slick-slider{
+        margin: 5rem;
+        .slick-slide{
+            padding: 5rem;
+        }
+        .slick-center{
+            
+            .testimonialCard{
+                
+                .contentContainer{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .slick-prev::before,
+        .slick-next::before{
+            color: #41431d9a;
+        }
+        .slick-dots li button::before{
+            color: white;
+        }
+    }
+    
+}

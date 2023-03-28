@@ -1,0 +1,47 @@
+@import '../../../sass/base';
+
+.bestSellerSection{
+    position: relative;
+    padding: 20rem 10rem;
+    margin-top: -10rem;
+    
+    @media screen and (max-width: 1200px){
+        margin-top: -12rem;
+    }
+    @media screen and (max-width: 800px){
+        margin-top: -16rem;
+        padding: 30rem 10rem;
+    }
+    @include response(phone){
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contentContainer{
+        position: relative;
+        z-index: 1;
+        .heading{
+            font-size: 8rem;
+            color: $color-DarkOlive;
+            margin-bottom: 8rem;
+            text-align: center;
+
+            @include response(phone){
+                margin-bottom: 0;
+            }
+        }
+    }
+    .bgContainer{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        .bgImg{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

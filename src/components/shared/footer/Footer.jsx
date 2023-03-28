@@ -1,13 +1,13 @@
 import React from 'react';
 
 // LAYOUT
-import designLayout from '../../assets/layout/layout-footer.svg';
-import iconBg from '../../assets/layout/layout-icon.svg';
-import numberBg from '../../assets/layout/layout-numberDark.svg';
+import designLayout from '../../../assets/layout/layout-footer.svg';
+import iconBg from '../../../assets/layout/layout-icon.svg';
+import numberBg from '../../../assets/layout/layout-numberDark.svg';
 // LOGO
-import bobLogo from '../../assets/logo/bob-logo.svg';
+import bobLogo from '../../../assets/logo/bob-logo.svg';
 // ICONS
-import iconPhone from '../../assets/icons/phone-icon.svg';
+import iconPhone from '../../../assets/icons/phone-icon.svg';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import style from './footer.module.scss';
@@ -37,7 +37,9 @@ const Footer = () => {
         heading,
         address,
         email,
-        craftedBy } = style;
+        craftedBy,
+        craftedByMob
+    } = style;
 
     return (
         <div className={footer}>
@@ -61,6 +63,7 @@ const Footer = () => {
                         <img className={logo} src={bobLogo} alt="bob logo" />
                     </div>
                     <span className={copywrite}>@Bob the Tiny Turtle - 2022</span>
+                    <span className={craftedByMob}>Crafted with JoYY by YY Design</span>
                 </div>
                 <div className={containerRight}>
                     <div className={iconsContainer}>

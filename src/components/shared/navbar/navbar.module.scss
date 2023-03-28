@@ -1,11 +1,18 @@
-@import '../../sass/base';
+@import '../../../sass/base';
 
-.navbar{
-    padding: 8rem 14rem 2rem 14rem ;
+.navbarDesktop{
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    padding: 8rem 14rem 2rem 14rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 
     .logoContainer{
         height: 10rem;
@@ -72,5 +79,37 @@
                 }
             }
         }
+    }
+}
+.navbarMob{
+    position: absolute;
+    z-index: 11;
+    padding: 5rem 5rem 2rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 767px){
+        display: none;
+    }
+
+    .logoContainer{
+        height: 8rem;
+
+        .logo{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .phone,
+    .menu{
+        font-size: 3.5rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 }

@@ -1,0 +1,52 @@
+@import '../../../sass/base';
+
+.testimonialSection{
+    position: relative;
+    padding: 30rem 0 5rem 0;
+    margin-top: -10rem;
+
+    .contentContainer{
+        position: relative;
+        z-index: 2;
+
+        .heading{
+            font-size: 8rem;
+            color: $textLight;
+            margin-bottom: 8rem;
+            text-align: center;
+        }
+    }
+    .backgroundContainer{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        .img{
+            height: 120%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+    .layoutContainer{
+        height: 35rem;
+        width: 43rem;
+
+        position: absolute;
+        right: 15rem;
+        z-index: 2;
+
+        @include response(phone){
+            right: 5rem;
+        }
+
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
