@@ -4,7 +4,7 @@
     background-color: $color-LightBlue;
     padding: 20rem 10rem;
     margin-top: -20rem;
-
+    
     @include response(phone){
         padding-left: 5rem;
         padding-right: 5rem;

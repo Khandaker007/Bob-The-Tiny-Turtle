@@ -1,0 +1,49 @@
+@import '../../../sass/base';
+
+.sidebar{
+    width: 80%;
+    height: 100svh;
+
+    background-color: $color-LightBlue;
+
+    .header{
+        padding: 4.5rem 4.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .crossBtn{
+            height: 4rem;
+            background-color: transparent;
+            border: none;
+
+            .icon{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .logoContainer{
+            height: 8rem;
+    
+            .logo{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .list{
+        padding-left: 4.5rem;
+        list-style: none;
+        font-size: 4rem;
+
+        
+        .item{
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

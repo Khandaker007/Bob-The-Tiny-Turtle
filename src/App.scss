@@ -36,3 +36,29 @@ body {
   margin-right: auto;
   overflow-x: hidden;
 }
+
+.app{
+  position: relative;
+
+  .sidebarContainer{
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    transition: all .2s;
+  }
+  
+  .close{
+    left: -220rem;
+    z-index: -1;
+  }
+  .open{
+    left: 0;
+    z-index: 12;
+  }
+}

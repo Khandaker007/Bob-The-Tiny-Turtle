@@ -2,24 +2,27 @@ import React from 'react';
 
 import bobLogo from '../../../assets/logo/bob-logo.svg';
 import numberLayoutLight from '../../../assets/layout/layout-numberLight.svg';
-import { FaBars, FaPhoneAlt } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 import style from './navbar.module.scss';
 
-const Navbar = () => {
-    const {
-        navbarDesktop,
-        logoContainer,
-        layoutContainer,
-        layout,
-        logo,
-        list,
-        item,
-        number,
-        navbarMob,
-        phone,
-        menu
-    } = style;
+const {
+    navbarDesktop,
+    logoContainer,
+    layoutContainer,
+    layout,
+    logo,
+    list,
+    item,
+    number,
+    navbarMob,
+    menu
+} = style;
+
+const Navbar = ({ handleToggle }) => {
+    // const handleClick = () => {
+    //     handleToggle(true);
+    // };
 
     return (
         <>
@@ -40,11 +43,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className={navbarMob}>
-                <button className={phone}><FaPhoneAlt/></button>
+                <button className={menu} onClick={() => handleToggle()}><FaBars/></button>
                 <div className={logoContainer}>
                     <img className={logo} src={bobLogo} alt="bob logo" />
                 </div>
-                <button className={menu}><FaBars/></button>
+                <div></div>
             </div>
         </>
     );
